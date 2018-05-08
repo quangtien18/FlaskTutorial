@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <div class="jumbotron text-center">
+        <h1>Welcome to Flaskapp</h1>
+        <p class="lead">Chào mừng chúng mày tới với trang của Money Boss . Nếu thích thì Like , hay thì Share và đừng quên Subscribe , nếu không thì tao sẽ..............................kệ chúng mày T-T .</p>
+        {% if session.logged_in == NULL %}
+            <a href="/register" class="btn btn-primary btn-lg">Register</a>
+            <a href="login" class="btn btn-success btn-lg">Login</a>
+        {% endif %}
+    </div>
+{% endblock %}
